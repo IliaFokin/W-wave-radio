@@ -108,7 +108,7 @@ guestsBtn.forEach((btn) => {
   })
 })
 
-const bioBtn = document.querySelectorAll('.btn__bio');
+const bioBtn = document.querySelectorAll('.accordion__bio');
 const guestsContent = document.querySelectorAll('.guests__content');
 
 bioBtn.forEach((btn) => {
@@ -175,19 +175,19 @@ searchBtn.addEventListener('click', () => {
 })
 
 
-const loginBtn = document.querySelectorAll('.header__login');
-const loginBar = document.querySelector('.header__loginbar');
+const loginBtn = document.querySelectorAll('.header__loginbtn');
+const loginBar = document.querySelector('.header__login');
 const loginClose = document.querySelector('.login__close');
 
 loginBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
-    loginBar.classList.add('header__loginbar--active');
+    loginBar.classList.add('header__login--active');
     document.body.classList.add('stop__scroll');
   })
 });
 
 loginClose.addEventListener('click', () => {
-  loginBar.classList.remove('header__loginbar--active');
+  loginBar.classList.remove('header__login--active');
   document.body.classList.remove('stop__scroll');
 })
 
