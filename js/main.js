@@ -25,7 +25,7 @@ bottomLink.forEach((link) => {
 
 
 const liveBtn = document.querySelector('.header__live');
-const bottomRadioWrapper = document.querySelector('.bottom__radio--wrapper');
+const bottomRadioWrapper = document.querySelector('.bottom__radio-wrapper');
 
 liveBtn.addEventListener('click', () => {
   liveBtn.classList.toggle('header__live--active');

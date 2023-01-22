@@ -713,12 +713,11 @@ img {
 }
 
 .podcasts__item {
+  display: flex;
   position: relative;
   margin-right: var(--gap);
   margin-bottom: var(--gap);
-  padding-left: 112px;
   width: calc((100% - var(--gap)) / 2);
-  height: 140px;
   background-color: white;
   background-position: left center;
   background-size: contain;
@@ -737,38 +736,6 @@ img {
   display: block;
 }
 
-.podcast1 {
-  background-image: url('../img/pod1.jpg');
-}
-
-.podcast2 {
-  background-image: url('../img/pod2.jpg');
-}
-
-.podcast3 {
-  background-image: url('../img/pod3.jpg');
-}
-
-.podcast4 {
-  background-image: url('../img/pod4.jpg');
-}
-
-.podcast5 {
-  background-image: url('../img/pod5.jpg');
-}
-
-.podcast6 {
-  background-image: url('../img/pod6.jpg');
-}
-
-.podcast7 {
-  background-image: url('../img/pod7.jpg');
-}
-
-.podcast8 {
-  background-image: url('../img/pod8.jpg');
-}
-
 .podcasts__date {
   position: absolute;
   display: flex;
@@ -785,6 +752,14 @@ img {
   font-size: 10px;
   line-height: 10px;
   color: #121723;
+}
+
+.podcasts__picture {
+  flex-shrink: 0;
+}
+
+.podcasts__card {
+  width: 100%;
 }
 
 .card__top {
@@ -889,6 +864,10 @@ img {
   color: #A1A6B4;
   outline: none;
   transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.card__info:nth-child(3n) {
+  margin-right: 0;
 }
 
 .card__info path {
@@ -1141,12 +1120,8 @@ img {
 .broadcast__card {
   margin-right: var(--gap);
   margin-bottom: var(--gap);
-  padding: 170px 16px 20px;
   width: calc((100% - 2 * var(--gap)) / 3);
   border: 1px solid #E6E8EC;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .broadcast__card:nth-child(3n) {
@@ -1157,28 +1132,16 @@ img {
   margin-bottom: 0;
 }
 
-.brod1 {
-  background-image: url('../img/brod1.jpg');
+.card__picture {
+  width: 100%;
 }
 
-.brod2 {
-  background-image: url('../img/brod2.jpg');
+.card__picture img {
+  width: 100%;
 }
 
-.brod3 {
-  background-image: url('../img/brod3.jpg');
-}
-
-.brod4 {
-  background-image: url('../img/brod4.jpg');
-}
-
-.brod5 {
-  background-image: url('../img/brod5.jpg');
-}
-
-.brod6 {
-  background-image: url('../img/brod6.jpg');
+.card__text {
+  padding: 20px 16px;
 }
 
 .card__title {
@@ -1374,10 +1337,8 @@ img {
 
 .accordion__list {
   display: none;
-  flex-direction: column;
   flex-wrap: wrap;
   padding: 30px 0;
-  height: 177px;
 }
 
 .guests__btn--active + .accordion__list {
@@ -1396,10 +1357,11 @@ img {
 
 .accordion__item {
   margin-bottom: 13px;
+  width: calc((100% - 30px * 2) / 3);
 }
 
-.accordion__item:nth-child(4n) {
-  margin-bottom: 0;
+.accordion__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .accordion__bio {
@@ -1640,13 +1602,9 @@ img {
   position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
-  padding: 176px 16px 16px;
   width: calc((100% - 30px * 3) / 4);
   border: 1px solid #E6E8EC;
   outline: none;
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
   transition: background-color .3s ease-in-out;
 }
 
@@ -1731,52 +1689,14 @@ img {
   width: 48px;
 }
 
-.playlist1 {
-  background-image: url('../img/playlist1.jpg')
+.playlists__picture img {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.playlist2 {
-  background-image: url('../img/playlist2.jpg')
-}
-
-.playlist3 {
-  background-image: url('../img/playlist3.jpg')
-}
-
-.playlist4 {
-  background-image: url('../img/playlist4.jpg')
-}
-
-.playlist5 {
-  background-image: url('../img/playlist5.jpg')
-}
-
-.playlist6 {
-  background-image: url('../img/playlist6.jpg')
-}
-
-.playlist7 {
-  background-image: url('../img/playlist7.jpg')
-}
-
-.playlist8 {
-  background-image: url('../img/playlist8.jpg')
-}
-
-.playlist9 {
-  background-image: url('../img/playlist9.jpg')
-}
-
-.playlist10 {
-  background-image: url('../img/playlist10.jpg')
-}
-
-.playlist11 {
-  background-image: url('../img/playlist11.jpg')
-}
-
-.playlist12 {
-  background-image: url('../img/playlist12.jpg')
+.playlists__text {
+  padding: 16px;
 }
 
 .playlists__country {
